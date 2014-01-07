@@ -8,6 +8,9 @@ Hope you enjoy the mess below! -Alex
 \usepackage{array}
 \usepackage{setspace}
 \usepackage{anysize}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{longtable}
 \marginsize{3.5cm}{3.5cm}{1cm}{1cm}
 
 \addtolength{\oddsidemargin}{-.825in}
@@ -44,10 +47,8 @@ Hope you enjoy the mess below! -Alex
     \indent Alex has contributed some code to open source projects Bottle and pyrollbar.\\
 
     \vspace{.2in}
-    \begin{large}
-    Work History \\
-    \end{large}
-    \begin{tabular}{ m{3cm} m{3cm} m{3cm} m{8cm} }
+    \begin{longtable}{ m{3cm} m{3cm} m{3cm} m{8cm}}
+        \caption*{Work History}\\
         \hline
         March 2012 - \newline October 2013 & Voxy, Inc & Software Engineer & 
             \begin{itemize}
@@ -60,18 +61,21 @@ Hope you enjoy the mess below! -Alex
             \end{itemize}
         \\
         \hline
-        Fall/Winter 2010 - January 2011 & UPenn \newline School of Medicine & Lab Assistant & Assisted in the generation, collection, and processing of data from experiments. \newline Dealt with Matlab, Excel, and Python, as well as a variety of lab equipment. \\
+        Fall/Winter 2010 - January 2011 & University of \newline Pennsylvania - \newline School of Medicine & Lab Assistant & 
+            \begin{itemize}
+                \item Assisted in the generation, collection, and processing of data from experiments. 
+                \item Dealt with Matlab, Excel, and Python, as well as a variety of lab equipment.
+            \end{itemize}
+        \\
         \hline
-    \end{tabular}
-    \vspace{.3in}
+        \par
+    \end{longtable}
 
-    \begin{large}
-        Education \\
-    \end{large}
-    \begin{tabular}{ m{3cm} m{6.45cm} m{8cm} }
+    \begin{longtable}{ m{3cm} m{6.45cm} m{8cm} }
+        \caption*{Education}\\
         \hline
-        Fall 2007 - \newline Spring 2010 & UPenn \newline School of Engineering & Majored in Computer Science. Learned some theory, implemented a CPU, an OS shell, and some sweet buffer overflows. Also a little Chinese. Dropped out due to health reasons. \\
-    \end{tabular}
+        Fall 2007 - \newline Spring 2010 & University of \newline Pennsylvania - \newline School of Engineering & Majored in Computer Science. Learned some theory, implemented a CPU, an OS shell, and some sweet buffer overflows. Also a little Chinese. Dropped out due to health reasons. \\
+    \end{longtable}
     \vspace{.3in}
     
     \begin{comment}
