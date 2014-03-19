@@ -11,6 +11,7 @@ Hope you enjoy the mess below! -Alex
 \usepackage{tabularx}
 \usepackage{caption}
 \usepackage{longtable}
+\usepackage{multicol}
 \marginsize{3.5cm}{3.5cm}{1cm}{1cm}
 
 \addtolength{\oddsidemargin}{-.825in}
@@ -20,41 +21,66 @@ Hope you enjoy the mess below! -Alex
 
 \begin{document}
     \pagenumbering{gobble}
-    \begin{minipage}[t][4em][c]{0.5 \textwidth}
+    \begin{multicols}{2}
         \begin{LARGE}
-            Alex Laties \\
+        \noindent
+        Alex Laties\\
         \end{LARGE}
+        \fbox{\parbox{0.35 \textwidth}{
         387 Franklin Avenue, Apt 103\\
         Brooklyn, NY 11238\\
         Phone: 267 825 2530\\
         Website: http://alex.laties.info/ \\
         E-Mail: alex@laties.info \\
-        Github: https://github.com/alex-laties \\
-    \end{minipage}
-    \begin{minipage}[t][10em][c]{0.5 \textwidth}
-        \vspace{3em}
+        Github: https://github.com/alex-laties
+        }}
+        \columnbreak
+
         \begin{Large}
-            General Purpose Software Developer
+        \noindent
+        Education\\
         \end{Large}
-
         \begingroup
-            \fontsize{8pt}{12pt}\selectfont
-            I'm general purpose programmer who has worked on building, maintaining, and scaling web applications. I work primarily in Python, but have no strong language preference and have used C, C\#, Java, Ruby, PHP, and Javascript.  I have experience with larger IDEs, such as Visual Studio, MonoDevelop, and XCode, but claim no great proficiencies. \\
-            \par
-            I have worked with teams in an agile style to quickly deliver features and products. I have worked with ticketing systems, such as Jira and Trello, to manage work loads. I have worked with source control systems, like Subversion and Git. I have experience with Test Driven Development through the use of unit tests. \\
-            \par
-            I have contributed some code to open source projects Bottle, watchwithme, and pyrollbar.\\
+        \fontsize{8pt}{12pt}\selectfont
+        \noindent
+        Fall 2007 - Spring 2010 \\
+        University of Pennsylvania School of Engineering \\
+        Majored in Computer Science.
+        \begin{itemize}
+            \item Learned some theory 
+            \item Implemented a CPU, an OS shell, and some sweet buffer overflows 
+            \item Dropped out due to health reasons.
+        \end{itemize}
         \endgroup
-    \end{minipage}
-
-    \vspace{4em}
+    \end{multicols}
+    
 
     \begin{Large}
-        Work History
+        \noindent
+        General Purpose Software Developer
     \end{Large}
 
-    \begin{minipage}[t][4em][c]{0.5 \textwidth}
-        \vspace{17em}
+    \begingroup
+        \fontsize{8pt}{12pt}\selectfont
+        \noindent
+        I'm general purpose programmer who has worked on building, maintaining, and scaling web applications. I work primarily in Python, but have no strong language preference and have used C, C\#, Java, Ruby, PHP, and Javascript.  I have experience with larger IDEs, such as Visual Studio, MonoDevelop, and XCode, but claim no great proficiencies. \\
+        \par
+        \noindent
+        I have worked with teams in an agile style to quickly deliver features and products. I have worked with ticketing systems, such as Jira and Trello, to manage work loads. I have worked with source control systems, like Subversion and Git. I have experience with Test Driven Development through the use of unit tests. \\
+        \par
+        \noindent
+        I have contributed some code to open source projects Bottle, watchwithme, and pyrollbar.\\
+    \endgroup
+
+    \begin{Large}
+        \noindent
+        Work History
+    \end{Large}
+    \begingroup
+    \fontsize{8pt}{12pt}\selectfont
+
+    \begin{multicols}{2}
+        \noindent
         March 2012 - October 2013 \\
         Voxy, Inc \\
         Software Engineer 
@@ -66,26 +92,17 @@ Hope you enjoy the mess below! -Alex
             \item Set up and wrote initial recipes for Chef provisioning service.
             \item Also dealt with PostgreSQL, MongoDB, Varnish, Celery, Redis, uwsgi, gunicorn, and nginx. 
         \end{itemize}
-    \end{minipage}
-    \begin{minipage}[t][4em][c]{0.5 \textwidth}
-        \vspace{7em}
+        \columnbreak
         Fall/Winter 2010 - January 2011 \\ 
         University of Pennsylvania - School of Medicine \\
-        Lab Assistant \\
+        Lab Assistant
         \begin{itemize}
             \item Assisted in the generation, collection, and processing of data from experiments. 
             \item Dealt with Matlab, Excel, and Python, as well as a variety of lab equipment.
         \end{itemize}
-    \end{minipage}
+    \end{multicols}
+    \endgroup
 
-    \vspace{.2in}
-
-    \begin{longtable}{ m{3cm} m{6.45cm} m{8cm} }
-        \caption*{Education}\\
-        \hline
-        Fall 2007 - \newline Spring 2010 & University of \newline Pennsylvania - \newline School of Engineering & Majored in Computer Science. Learned some theory, implemented a CPU, an OS shell, and some sweet buffer overflows. Also a little Chinese. Dropped out due to health reasons. \\
-    \end{longtable}
-    
     \begin{comment}
         Of Note \\
         \begin{tabular}{ m{3cm} m{3cm} m{3cm} m{8cm}}
